@@ -17,27 +17,27 @@ Usage:
 -----
 
 
-    
-    import docx
-    
-    document = docx.Document()
+```python  
+import docx
 
-    paragraph = document.add_paragraph('text') # create new paragraph
+document = docx.Document()
 
-    comment = paragraph.add_comment('comment',author='Obay Daba',initials= 'od') # add a comment on the entire paragraph
+paragraph = document.add_paragraph('text')  # create new paragraph
 
-    paragraph2 = document.add_paragraph('text') # create another paragraph
+comment = paragraph.add_comment('comment',author='Obay Daba',initials= 'od')  # add a comment on the entire paragraph
 
-    run = paragraph2.add_run('text1') #add a run to the paragraph
+paragraph2 = document.add_paragraph('text')  # create another paragraph
 
-    run.add_comment('comment') # add a comment only for the run text 
+run = paragraph2.add_run('text1')  # add a run to the paragraph
 
-    run.add_comment('comment2')
+run.add_comment('comment')  # add a comment only for the run text 
 
-    run_comments = run.comments
+run.add_comment('comment2')
 
-    paragraph.add_footnote('footnote text') # add a footnote
+run_comments = run.comments
 
+paragraph.add_footnote('footnote text')  # add a footnote
+```
 
 Donation
 ------------
